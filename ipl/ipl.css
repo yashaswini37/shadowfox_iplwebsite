@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #0a74da;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #0a74da;
+    border-bottom: 2px solid #0a74da;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+.home {
+    background: #fff;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+.home img {
+    padding: -200px;
+    height:100px;
+    width:200px;
+    
+}
+
+.players, .schedule, .news {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.player-cards, #schedule-list, #news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.player-card, .schedule-item, .news-item {
+    background: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.player-card:hover, .schedule-item:hover, .news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.player-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 0.5rem;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.filters button {
+    margin: 0 0.5em;
+    padding: 0.5em 1em;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #0056b3;
+}
+
+.schedule {
+    background-color: aqua;
+}
+
+.news {
+    background-color:#e2f374;
+}
+
+footer {
+    background: #0a74da;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}

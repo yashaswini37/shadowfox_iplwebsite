@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Team Hub</title>
+    <link rel="stylesheet" href="ipl.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>IPL Team Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" aria-label="Home">Home</a></li>
+                    <li><a href="#players" aria-label="Players">Players</a></li>
+                    <li><a href="#schedule" aria-label="Schedule">Schedule</a></li>
+                    <li><a href="#news" aria-label="News">News</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="home">
+        <div class="container">
+            <h2>Welcome to the IPL Team CSk Hub <br>Chennai Super Kings </h2>
+            <p>Your one-stop destination for all things related to your favorite IPL team.</p>
+            <img src="https://wallpapercave.com/wp/wp4166466.jpg">
+        </div>
+    </section>
+    
+    <section id="players" class="players">
+        <div class="container">
+            <h2>Player Profiles</h2>
+            <div class="filters">
+                <button onclick="filterPlayers('all')">All</button>
+                <button onclick="filterPlayers('batsman')">Batsmen</button>
+                <button onclick="filterPlayers('bowler')">Bowlers</button>
+                <button onclick="filterPlayers('allrounder')">All-Rounders</button>
+            </div>
+            <div class="player-cards" id="player-cards">
+                <!-- Player cards will be injected here by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2>Match Schedule</h2>
+            <div id="schedule-list">
+                <!-- Match schedule will be injected here by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <section id="news" class="news">
+        <div class="container">
+            <h2>Latest News</h2>
+            <div id="news-list">
+                <!-- News articles will be injected here by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 IPL Team Hub. All rights reserved.</p>
+            <marquee><h2>Thank you for visiting this page.</h2></marquee>
+        </div>
+    </footer>
+
+    <script src="ipl.js"></script>
+</body>
+</html>
